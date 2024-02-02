@@ -61,7 +61,7 @@ define('_ujgTimeTableDrawer', ['jquery', '_ujgTimeUtil'], function ($, timeUtil)
                         // create and push issueObj
                         issueObj = {};
                         issueObj.key = worklogEvent.issueKey;
-                        issueObj.description = worklogEvent.issueDescription; // Add description
+                        issueObj.description = worklogEvent.type; // Add description
                         issueObj.dates = {};
                         issueObj.timeSpentSeconds = 0;
                         issuesObj.issuesArr.push(issueObj);
